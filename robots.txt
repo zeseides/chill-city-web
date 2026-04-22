@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://chill-city.twfivem.com/sitemap.xml
