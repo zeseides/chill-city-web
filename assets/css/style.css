@@ -360,6 +360,23 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   transition: transform var(--t), border-color var(--t);
 }
 .img-placeholder:hover { transform: scale(1.02); border-color: var(--accent); }
+
+.img-card {
+  aspect-ratio: 4 / 3;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background: var(--bg-card);
+  transition: transform var(--t), border-color var(--t), box-shadow var(--t);
+  cursor: zoom-in;
+}
+.img-card:hover {
+  transform: scale(1.03);
+  border-color: var(--accent);
+  box-shadow: var(--shadow-glow);
+}
 .img-placeholder::before {
   content: attr(data-label);
   position: absolute; inset: 0;
